@@ -1,0 +1,43 @@
+{
+	"name": "simonmarcellinden/databasesettings",
+	"description": "Package for save seeings in your database.",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Simon Marcel Linden",
+			"email": "info@snerve.de"
+		}
+	],
+	"homepage": "https://github.com/simonmarcellinden/mediable",
+	"keywords": [
+		"Laravel",
+		"Lumen",
+		"Settings",
+		"Database",
+		"config"
+	],
+	"autoload": {
+		"psr-4": {
+			"SimonMarcelLinden\\DatabaseSettings\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Simonmarcellinden\\DatabaseSettings\\Tests\\": "test"
+		}
+	},
+	"require": {
+
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^9.3",
+		"orchestra/testbench": "~5|~6"
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"SimonMarcelLinden\\DatabaseSettings\\DatabaseSettingsProvider"
+			]
+		}
+	}
+}
