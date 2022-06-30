@@ -69,7 +69,6 @@ class SettingController extends Controller {
      * @author Simon Marcel Linden
 	 */
 	public function show($key) {
-		return config('settings.mail');
 		if(($setting = Setting::get($key)) == null) {
 			return false;
 			// return responseFromCode(92010);
