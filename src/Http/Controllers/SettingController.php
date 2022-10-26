@@ -166,7 +166,8 @@ class SettingController extends Controller {
 		}
 
 		$setting = Setting::create($request_for_setting);
-		$setting->elements()->createMany($request_for_options);
+		if($request->input('elements'))
+			$setting->elements()->createMany($request_for_options);
 		$setting = new SettingResource($setting);
 
 		Setting::flushCache();
